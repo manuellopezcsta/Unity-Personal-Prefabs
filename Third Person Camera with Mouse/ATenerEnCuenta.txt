@@ -1,0 +1,25 @@
+- El Player tiene que tener el scrip Third Person Movement.
+    * Setear un controller, cam es la camara normal.
+    * Speed es la velocidad del Player
+    * Turn smooth time 0.1 (velocidad de giro del pj)
+- Dentro del player va el modelo. El frente del modelo apunta como la flechita azul de unity.
+
+- Crear objeto para Third Person Camera
+    *Agregar cinemachine Free look camera
+    *Agregar cinemachine collider
+    *Agregar Third Person cinemachine Free Look Camera Scrip. ( Esto es solo si queres q la camara se mueva cuando haces click nomas).
+- Agregar cinemachine Free Look Camera
+    * follow y look at Player transform (player , no el modelo.)
+    * Y axis speed 4 , accel 0.1. INVERT si.
+    * X axis speed 450 , accel 0.1 , INVERT no.
+    * Binding Mode World Space
+    * Orbits> Top rig 14 12, Middle Rig 5 18, Bottom Rig -1.59 12
+    * Abajo de todo add extension. cinemachine Collider
+- El collider de cinemachine
+    *Strategy Pull Camera Forward.
+    * Ignore Tag Player // DARLE AL OBJETO PLAYER (no el modelo), la tag de Player.
+    * Collide Against, crear tag terrair y darsela a los objetos, o usar default si anda..
+
+
+    Ante Dudas
+    https://www.youtube.com/watch?v=4HpC--2iowE

@@ -1,0 +1,5 @@
+Sacado de car project with colliders
+
+
+en el objeto principal poner el script del auto y un rigidbody
+separar los wheel colider de los modelos de las ruedas.
